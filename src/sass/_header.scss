@@ -1,0 +1,25 @@
+.header {
+    background: $black;
+    color: $white;
+    font-family: 'Raleway', sans-serif;
+    z-index: 1;
+
+    &__toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: calcRem(16px) calcRem(24px);
+        text-transform: uppercase;
+    }
+
+    &__icon {
+        margin-right: calcRem(8px);
+        font-size: calcRem(20px);
+    }
+
+    @include tablet {
+        .header__toggle {
+            display: none;
+        }
+    }
+}

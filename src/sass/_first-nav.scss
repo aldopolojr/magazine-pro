@@ -1,0 +1,115 @@
+.first-nav {
+    display: block;
+
+    &.closed {
+        display: none;
+    }
+
+    &__group {
+        position: relative;
+    }
+
+    &__link {
+        display: block;
+        padding: calcRem(15px) calcRem(20px);
+        font-size: calcRem(14px);
+        text-transform: uppercase;
+
+        &:hover {
+            color: $grey-txt;
+        }
+    }
+
+    &__link--active {
+        color: $grey-txt;
+    }
+
+    &__sub-toggle {
+        position: absolute;
+        top: 23px;
+        right: calcRem(30px);
+        font-size: calcRem(20px);
+        transform: translateY(-50%);
+
+        &:hover {
+            color: $grey-txt;
+        }
+    }
+
+    &__sub-group {
+        display: block;
+        background: $black;
+        z-index: 2;
+        
+        &.closed {
+            display: none;
+        }
+    }
+
+    &__sub-link {
+        display: block;
+        padding: calcRem(15px) calcRem(20px) calcRem(15px) calcRem(35px);
+        font-size: calcRem(12px);
+
+        &:hover {
+            color: $grey-txt;
+        }
+    }
+
+    // TABLET
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 750px;
+
+        &.closed {
+            display: flex;
+        }
+
+        &__link {
+            padding: calcRem(25px) calcRem(20px);
+        }
+
+        &__sub-group {
+            display: none;
+            position: absolute;
+            top: 66px;
+            left: 0;
+            width: 200px;
+
+            &.closed {
+                display: none;
+            }
+        }
+
+        &__group:hover .first-nav__sub-group {
+            display: block;
+        }
+
+        &__sub-link {
+            padding: calcRem(15px) calcRem(20px);
+            border-top: 1px solid $white;
+        }
+
+        &__sub-toggle, &__group--second-nav {
+            display: none;
+        }
+    }
+
+    // DESKTOP
+    @include desktop {
+        justify-content: flex-start;
+        max-width: 960px;
+
+        &__link:first-child {
+            padding-left: 0;
+        }
+    }
+
+    // DESKTOP-MEDIUM
+    @include desktop-md {
+        max-width: 1140px;
+    }
+}
