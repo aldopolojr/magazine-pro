@@ -75,7 +75,7 @@
         &__sub-group {
             display: none;
             position: absolute;
-            top: 66px;
+            top: 100%;
             left: 0;
             width: 200px;
 
@@ -103,7 +103,7 @@
         justify-content: flex-start;
         max-width: 960px;
 
-        &__link:first-child {
+        &__group:first-child a {
             padding-left: 0;
         }
     }

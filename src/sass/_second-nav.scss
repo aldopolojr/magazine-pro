@@ -1,0 +1,77 @@
+.second-nav {
+    display: none;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid $black;
+    z-index: 1;
+
+    &__group {
+        position: relative;
+    }
+
+    &__group--contact {
+        display: none;
+    }
+
+    &__link {
+        padding: calcRem(25px) calcRem(20px);
+        font-size: calcRem(14px);
+        text-transform: uppercase;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__sub-group {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 200px;
+        background: $white;
+        z-index: 2;
+    }
+
+    &__group:hover .second-nav__sub-group {
+        display: block;
+    }
+
+    &__sub-link {
+        display: block;
+        padding: calcRem(20px) calcRem(20px);
+        font-size: calcRem(12px);
+        border-left: 1px solid $black;
+        border-right: 1px solid $black;
+        border-bottom: 1px solid $black;
+
+        &:first-child {
+            border-top: 1px solid $white;
+        }
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    @include tablet {
+        display: flex;
+    }
+
+    @include desktop {
+        justify-content: flex-start;
+
+        &__group--contact {
+            margin-left: auto;
+            display: block;
+        }
+
+        &__group:first-child a {
+            padding-left: 0;
+        }
+
+        &__group:last-child a {
+            padding-right: 0;
+        }
+    }
+}
