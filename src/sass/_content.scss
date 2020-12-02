@@ -1,0 +1,11 @@
+.content {
+    margin: calcRem(40px) auto;
+
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

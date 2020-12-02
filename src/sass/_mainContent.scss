@@ -1,0 +1,13 @@
+.main {
+    width: 100%;
+    min-height: 100px;
+    background: red;
+
+    @include desktop {
+        width: 630px;;
+    }
+
+    @include desktop-md {
+        width: 750px;
+    }
+}

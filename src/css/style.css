@@ -379,8 +379,51 @@ body {
   }
 }
 
+.content {
+  margin: 2.5rem auto;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 64em) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main {
+  width: 100%;
+  min-height: 100px;
+  background: red;
+}
+@media only screen and (min-width: 64em) {
+  .main {
+    width: 630px;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .main {
+    width: 750px;
+  }
+}
+
+.aside {
+  width: 100%;
+  min-height: 100px;
+  background: blue;
+}
+@media only screen and (min-width: 64em) {
+  .aside {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .aside {
+    width: 360px;
+  }
+}
+
 .footer {
-  margin-top: 6.25rem;
   padding: 3.75rem 0;
   background: #222222;
   color: #ffffff;
