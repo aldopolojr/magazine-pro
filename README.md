@@ -1,5 +1,5 @@
-# Magazine Pro
-This is a **project**, check here for the [demo](https://aldopolojr.github.io/magazine-pro/)
+# Magazine-Pro
+This is a **slicing**, check here for the [demo](https://aldopolojr.github.io/magazine-pro/)
 
 ## Notes
 - …
