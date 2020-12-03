@@ -461,10 +461,10 @@ body {
 
 @media only screen and (min-width: 37.5em) {
   .section--lifestyle .article {
-    margin-bottom: 2.5rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 2.5rem;
     border-bottom: 2px solid #eeeeee;
   }
   .section--lifestyle .article:last-child {
@@ -480,6 +480,45 @@ body {
   }
 }
 
+.section--fashion .article {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.25rem;
+  justify-content: flex-start;
+  border-bottom: 2px solid #eeeeee;
+}
+.section--fashion .article:last-child {
+  margin-bottom: 0rem;
+  border-bottom: 0;
+}
+.section--fashion .image {
+  width: 100px;
+  margin-bottom: 1.5rem;
+}
+.section--fashion .image__img {
+  width: 100px;
+  height: 100px;
+}
+.section--fashion .article__content {
+  margin: 0 0 1.25rem 1.5rem;
+  width: auto;
+}
+.section--fashion .article__title {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.section--fashion .article__author {
+  color: #008285;
+  font-weight: 400;
+}
+.section--fashion .article__author:hover {
+  color: #222222;
+  text-decoration: none;
+}
+.section--fashion .article__txt {
+  font-size: 0.875rem;
+}
+
 .article__content {
   margin: 1.25rem 0 2.5rem;
 }
@@ -489,6 +528,11 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.2;
+  -webkit-transition: color 0.1s ease-in-out;
+  -moz-transition: color 0.1s ease-in-out;
+  -ms-transition: color 0.1s ease-in-out;
+  -o-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 .article__title:hover {
   color: #008285;
@@ -498,6 +542,11 @@ body {
   margin-bottom: 0.625rem;
   color: #626e81;
   font-size: 0.875rem;
+  -webkit-transition: color 0.1s ease-in-out;
+  -moz-transition: color 0.1s ease-in-out;
+  -ms-transition: color 0.1s ease-in-out;
+  -o-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 .article__author:hover {
   text-decoration: underline;

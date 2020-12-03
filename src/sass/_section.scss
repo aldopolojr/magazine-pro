@@ -45,10 +45,10 @@
 .section--lifestyle {
     @include phablet {
         .article {
-            margin-bottom: calcRem(40px);
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+            margin-bottom: calcRem(40px);
             border-bottom: 2px solid $grey-bg;
 
             &:last-child {
@@ -64,6 +64,55 @@
         .article__content {
             margin-top: 0;
             width: 65%;
-        }   
+        }
+    }
+}
+
+.section--fashion {
+    .article {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: calcRem(20px);
+        justify-content: flex-start;
+        border-bottom: 2px solid $grey-bg;
+
+        &:last-child {
+            margin-bottom: calcRem(0px);
+            border-bottom: 0;
+        }
+    }
+
+    .image {
+        width: 100px;
+        margin-bottom: calcRem(24px);
+    }
+
+    .image__img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .article__content {
+        margin: 0 0 calcRem(20px) calcRem(24px);
+        width: auto;
+    }
+
+    .article__title {
+        font-size: calcRem(20px);
+        font-weight: 400;
+    }
+
+    .article__author {
+        color: $accent;
+        font-weight: 400;
+
+        &:hover {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+
+    .article__txt {
+        font-size: calcRem(14px);
     }
 }

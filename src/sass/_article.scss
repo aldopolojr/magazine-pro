@@ -9,6 +9,7 @@
         font-size: calcRem(24px);
         font-weight: 300;
         line-height: 1.2;
+        @include transition(color 0.1s ease-in-out);
 
         &:hover {
             color: $accent;
@@ -20,6 +21,7 @@
         margin-bottom: calcRem(10px);
         color: $grey-author;
         font-size: calcRem(14px);
+        @include transition(color 0.1s ease-in-out);
 
         &:hover {
             text-decoration: underline;
