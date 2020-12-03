@@ -1,0 +1,20 @@
+.image {
+    position: relative;
+    width: 100%;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__caption {
+        position: absolute;
+        bottom: calcRem(24px);
+        right: 0;
+        padding: calcRem(5px) calcRem(10px);
+        background: $accent;
+        color: $white;
+        font-size: calcRem(14px);
+        font-weight: 300;
+    }
+}

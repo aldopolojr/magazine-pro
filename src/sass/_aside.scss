@@ -1,7 +1,5 @@
 .aside {
     width: 100%;
-    min-height: 100px;
-    background: blue;
 
     @include desktop {
         width: 300px;

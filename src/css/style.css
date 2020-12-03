@@ -393,8 +393,6 @@ body {
 
 .main {
   width: 100%;
-  min-height: 100px;
-  background: red;
 }
 @media only screen and (min-width: 64em) {
   .main {
@@ -409,8 +407,6 @@ body {
 
 .aside {
   width: 100%;
-  min-height: 100px;
-  background: blue;
 }
 @media only screen and (min-width: 64em) {
   .aside {
@@ -421,6 +417,100 @@ body {
   .aside {
     width: 360px;
   }
+}
+
+.section__title {
+  margin-bottom: 1.5rem;
+  padding: 0.625rem;
+  background: #222222;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.section__content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .section--travel .section__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section--travel .article {
+    width: 47.5%;
+  }
+}
+
+@media only screen and (min-width: 37.5em) {
+  .section--lifestyle .article {
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #eeeeee;
+  }
+  .section--lifestyle .article:last-child {
+    margin-bottom: 0rem;
+    border-bottom: 0;
+  }
+  .section--lifestyle .image {
+    width: 30%;
+  }
+  .section--lifestyle .article__content {
+    margin-top: 0;
+    width: 65%;
+  }
+}
+
+.article__content {
+  margin: 1.25rem 0 2.5rem;
+}
+.article__title {
+  margin-bottom: 0.9375rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.article__title:hover {
+  color: #008285;
+  text-decoration: underline;
+}
+.article__author {
+  margin-bottom: 0.625rem;
+  color: #626e81;
+  font-size: 0.875rem;
+}
+.article__author:hover {
+  text-decoration: underline;
+}
+.article__txt {
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.625;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+.image__img {
+  width: 100%;
+  height: auto;
+}
+.image__caption {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 0;
+  padding: 0.3125rem 0.625rem;
+  background: #008285;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 300;
 }
 
 .footer {
@@ -496,6 +586,39 @@ body {
   .footer__box {
     width: 30%;
   }
+}
+
+.btn {
+  font-family: "roboto", "sans-serif";
+  font-weight: 400;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn.btn--1 {
+  display: block;
+  margin-top: 1.25rem;
+  padding: 0.5rem 0.625rem;
+  width: 100%;
+  background-color: #eeeeee;
+  font-size: 0.875rem;
+}
+.btn.btn--1:hover {
+  background-color: #008285;
+  color: #ffffff;
+}
+.btn.btn--2 {
+  background: none;
+  font-size: 1rem;
+}
+.btn.btn--2:hover {
+  color: #008285;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

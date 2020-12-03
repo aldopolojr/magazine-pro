@@ -1,0 +1,35 @@
+.article {
+    &__content {
+        margin: calcRem(20px) 0 calcRem(40px);
+    }
+
+    &__title {
+        margin-bottom: calcRem(15px);
+        font-family: 'Raleway', sans-serif;
+        font-size: calcRem(24px);
+        font-weight: 300;
+        line-height: 1.2;
+
+        &:hover {
+            color: $accent;
+            text-decoration: underline;
+        }
+    }
+
+    &__author {
+        margin-bottom: calcRem(10px);
+        color: $grey-author;
+        font-size: calcRem(14px);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__txt {
+        margin-bottom: calcRem(10px);
+        font-size: calcRem(16px);
+        font-weight: 300;
+        line-height: 1.625;
+    }
+}

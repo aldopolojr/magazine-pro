@@ -1,0 +1,58 @@
+.section {
+    &__title {
+        margin-bottom: calcRem(24px);
+        padding: calcRem(10px);
+        background: $black;
+        color: $white;
+        font-family: 'Raleway', sans-serif;
+        font-size: calcRem(16px);
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.section--travel {
+    @include phablet {
+        .section__content {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .article {
+            width: 47.5%;
+        }
+    }
+}
+
+.section--lifestyle {
+    @include phablet {
+        .article {
+            margin-bottom: calcRem(40px);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid $grey-bg;
+
+            &:last-child {
+                margin-bottom: calcRem(0px);
+                border-bottom: 0;
+            }
+        }
+
+        .image {
+            width: 30%;
+        }
+
+        .article__content {
+            margin-top: 0;
+            width: 65%;
+        }
+
+        
+    }
+}
