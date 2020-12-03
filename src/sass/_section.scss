@@ -14,6 +14,19 @@
         display: flex;
         flex-direction: column;
     }
+
+    &__tag {
+        margin: 0 calcRem(5px) calcRem(5px)  0;
+        padding: calcRem(5px) calcRem(10px);
+        background-color: $grey-bg;
+        font-size: calcRem(11px);
+        @include transition(background-color 0.1 ease-in-out);
+
+        &:hover {
+            background-color: $accent;
+            color: $white;
+        }
+    }
 }
 
 .section--travel {
@@ -51,8 +64,6 @@
         .article__content {
             margin-top: 0;
             width: 65%;
-        }
-
-        
+        }   
     }
 }

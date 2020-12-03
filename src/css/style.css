@@ -433,6 +433,21 @@ body {
   display: flex;
   flex-direction: column;
 }
+.section__tag {
+  margin: 0 0.3125rem 0.3125rem 0;
+  padding: 0.3125rem 0.625rem;
+  background-color: #eeeeee;
+  font-size: 0.6875rem;
+  -webkit-transition: background-color 0.1 ease-in-out;
+  -moz-transition: background-color 0.1 ease-in-out;
+  -ms-transition: background-color 0.1 ease-in-out;
+  -o-transition: background-color 0.1 ease-in-out;
+  transition: background-color 0.1 ease-in-out;
+}
+.section__tag:hover {
+  background-color: #008285;
+  color: #ffffff;
+}
 
 @media only screen and (min-width: 37.5em) {
   .section--travel .section__content {
