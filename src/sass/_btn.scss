@@ -29,6 +29,23 @@
             text-decoration: underline;
         }
     }
+
+    &.btn--3 {
+        display: block;
+        padding: calcRem(16px) calcRem(24px);
+        width: 100%;
+        background-color: $accent;
+        color: $white;
+        font-family: 'Raleway', sans-serif;
+        font-size: calcRem(14px);
+        font-weight: 300;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+    }
 }
 
 .btn--2 {
